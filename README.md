@@ -8,7 +8,7 @@ This Project is a Personal Portfolio wevsite built with HTML,CSS and Javascript.
 - smooth scrolling animations
 - Hover effects for better interactivity
 
-  # Technologies Used
+# Technologies Used
   - **HTML5**
   - **CSS**
   - **Javascript**
