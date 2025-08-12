@@ -1,0 +1,847 @@
+/* import font family */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/* import font family */
+
+/* General Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #101828;
+    color:white;
+    scroll-behavior: smooth;
+    margin-top: 30vh;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+a{
+    text-decoration: none;
+    margin-right: 40px;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+/* End General Styles */
+
+
+
+/*nav section styles*/
+.navbar {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 30px;
+    background: #101828;
+    color: white;
+    z-index: 9999;
+}
+.nav_title {
+    color: white;
+    text-decoration: none;
+    font-size: 1.9em;
+}
+.links {
+    display: flex;
+    list-style: none;
+}
+.links li {
+    margin-left: 20px;
+}
+.links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    font-size: 1.2em;
+    transition: all 0.3s ease-in-out;
+}
+.links a:hover {
+    background: #155DFC;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #155DFC;
+}
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+/* End header styles*/
+/* Profile Style */
+.Profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 145px;
+    height: 50vh;
+}
+.Profile_img img {
+    width :45vh;
+    height: 45vh;
+    border-radius: 50%;
+    margin: 80px;
+    box-shadow: 0 0 10px #155DFC;
+    transition: all 0.4s ease-in-out;
+}
+.Profile_img:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #155DFC;
+}
+.infos{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.infos .greeting{
+    padding-top: 20px;
+    font-size: 1.5em;
+    padding-bottom: 15px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.infos h3{
+    font-size: 2.5em;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.infos .job{
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    color:#155DFC;
+    font-weight: 600;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.btn_cv{
+    width: 150px;
+    padding: 15px;
+    margin: 20px;
+    background-color: #155DFC;
+    box-shadow: 2px 2px 5px rgba(12, 201, 12, 0.5);
+    color: black;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-weight: 550;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.btn_cv:hover{
+    background-color: #155DFC;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(12, 201, 12, 0.5);
+}
+.btn_contact{
+    width: 150px;
+    padding: 15px;
+    background-color: #292524;
+    box-shadow: 2px 2px 5px #101828;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-weight: 550;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.btn_contact:hover{
+    background-color: #FDC745;
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(12, 201, 12, 0.5);
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+.icons a img{
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #155DFC;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+.icons a img:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 20px #155DFC;
+}
+/* End Profile Style */
+/* About Section styles */
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 210px;
+    height: 50vh;
+}
+.about h3{
+    font-size: 1.3em;
+    padding-bottom: 15px;
+    font-family: 'ubuntu', sans-serif;
+    font-weight: 400;
+    color:gray;
+}
+.about h2{
+    font-size: 2.5em;
+    font-family: 'ubuntu', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.about_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+.about_img{
+    width:40vh;
+    height: 40vh;
+    display: flex;
+    margin: 20px;
+    border-radius: 5px;
+}
+.about_details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.about_details_me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.about_details_me .education , .about_details_me .experience{
+    width: 50%;
+    padding: 20px;
+    font-size: 1.2em;
+    font-family: 'ubuntu', sans-serif;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: #2B7FFF 2px solid;
+    border-radius: 15px;
+    margin: 10px;
+    height: 170px;
+    transition: all 0.3s ease-in-out;
+}
+.about_details_me .education h4 , 
+.about_details_me .experience h4{
+    font-size: 1.4em;
+    font-family: 'ubuntu', sans-serif;
+    color: white;
+    margin-bottom: 10px;
+}
+.about_details_me .education , .about_details_me .experience p{
+    font-size: 1.1em;
+    font-family: 'ubuntu', sans-serif;
+    color: white;
+    margin: 5px;
+    font-weight: 500;
+    color: gray;
+}
+.about_details_me .education img , 
+.about_details_me .experience img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+}
+.about_details_me .education:hover , .about_details_me .experience:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+}
+.about_description{
+    width: 100%;
+    padding: 20px;
+    font-size: 1em;
+    font-family: 'ubuntu', sans-serif;
+    color: white;
+    text-align: left;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+.about_description a{
+    color:#00FF00;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+
+/*end about section styles*/ 
+/* skills Section styles */
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 210px;
+}
+.skills h3{
+    font-size: 1.3em;
+    padding-bottom: 15px;
+    font-family: 'ubuntu', sans-serif;
+    font-weight: 400;
+    color:gray;
+}
+.skills h2{
+    font-size: 3em;
+    font-family: 'ubuntu', sans-serif;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1.5px;
+}
+.skills_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    width: 100%;
+}
+.technicall_skills{
+    width: 50%;
+    background-color: #ECFDF5;
+    border-radius: 15px;
+    margin: 15px;
+    height: 40vh;
+    padding: 10px;
+}
+.technicall_skills h4{
+    color: black;
+}
+.technicall_skills h3{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5em;
+    padding: 20px;
+}
+.skills_list{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.language{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.skill_name h4{
+    font-family: 'ubuntu', sans-serif;
+    font-weight: bold;
+    background-color: #155DFC;
+    border-radius: 5px;
+    padding: 10px;
+}
+.soft_skills{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #B9F8CF;
+    border-radius: 15px;
+    margin: 15px;
+    height: 40vh;
+    padding: 10px;
+}
+.soft_skills h3{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5em;
+    padding: 20px;
+}
+.soft_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+.technicall_skills:hover, .soft_skills:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(45, 189, 93, 0.7);
+    transition: all 0.3s ease-in-out;
+}
+
+/*  End skills Section styles */
+
+/* Projects Section Styles*/
+.Project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 210px;
+}
+.Project h3{
+    font-size: 1.3em;
+    padding-bottom: 15px;
+    font-family: 'ubuntu', sans-serif;
+    font-weight: 400;
+    color:gray;
+}
+.Project h2{
+    font-size: 3em;
+    font-family: 'ubuntu', sans-serif;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1.5px;
+}
+.projects_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width:100%;
+}
+.project:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 20px #21BCFF;
+    transition: all 0.3s ease-in-out;
+}
+.project{
+    width:25%;
+    height:60vh;
+    background-color:white;
+    margin:20px;
+    padding:20px;
+    border-radius: 30px;
+}
+.project img{
+    width:45vh;
+    height:35vh;
+    border-radius: 20px;
+    transition:all 0.3s ease-in-out;
+}
+.project img:hover{
+    transform:scale(1.05);
+    filter: brightness(0.5);
+    box-shadow: 0 0 20px rgba(45, 189, 93, 0.7);
+}
+.project h3{
+    padding: 8px;
+    color:black;
+    font-weight: bold;
+}
+.btns_prt{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+}
+.btns_prt .btn{
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    border:2px solid gray;
+    border-radius:20px;
+    padding:10px;
+    width:100px;
+    margin:20px;
+    color:black;
+    transition:all 0.3s ease-in-out;
+}
+.btns_prt .btn:hover{
+    transform:scale(1.1);
+    box-shadow: 0 0 20px rgba(45, 189, 93, 0.7);
+}
+/* End Projects Section Styles*/
+
+/* Contact section styles */
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin-top: 210px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.get_touch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.get_touch img{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.get_touch h2{
+    font-size: 3em;
+}
+.get_touch h2 span{
+    color: #2B7FFF;
+}
+.contact_form{
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+}
+.image img{
+    height: 60vh;
+    width: 400px;
+}
+.champ{
+    display: flex;
+    position: relative;
+}
+.champ img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top:15px;
+    margin-left: 10px;
+
+}
+.submit button img {
+    width: 20px;
+    height: 20px;
+}
+.champ input{
+    width: 80vh;
+    height: 50px;
+    margin-bottom: 15px;
+    outline: none;
+    border: gray 2px solid;
+    border-radius: 10px;
+    padding: 10px 40px;
+    background-color: #F5F5F5;
+    font-size: 1.05em;
+}
+.champ textarea{
+    width: 80vh;
+    height: 120px;
+    border-radius: 10px;
+    outline: none;
+    padding: 15px 40px;
+    border: gray 2px solid;
+    font-size: 1.05em;
+}
+.submit{
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.submit button{
+    font-size: 1.3em;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #21BCFF;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.submit button:hover{
+    transform: scale(1.2);
+     box-shadow: 0 0 20px #42D3F2;
+}
+
+/* End Contact section styles */
+/* footer section styles */
+.footer_section{
+    width: 100%;
+    height: 50vh;
+    background-color:#030712;
+    align-items: center;
+    margin-top: 80px;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.portfolio{
+    height: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-top: 15px;
+}
+.portfolio h2{
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 300;
+}
+.portfolio p{
+    font-size: 1.2em;
+    word-spacing: 1.3px;
+    color: gray;
+}
+.quik_links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.quik_links h2{
+    margin-bottom: 35px;
+    font-size: 2em;
+     font-weight: 300;
+}
+.quik_links ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+.quik_links ul li {
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.quik_links ul li img{
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height:20px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.quik_links ul li a{
+    font-size: 1.3em;
+    color: gray;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contact_me{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact_me h2{
+    font-size: 2em;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.contacts{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+.contacts p img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+.contacts p{
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    text-align: left;
+    margin-bottom: 20px;
+    color: gray;
+    transition: all 0.3s ease-in-out;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+.socials img{
+    width: 30px;
+    height: 30px;
+    margin-right: 35px;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.socials img:hover,
+.arrow_up a img:hover{
+    transform: scale(1.3);
+    box-shadow: 0 0 20px #42D3F2;
+}
+.arrow_up{
+    position: relative;
+    width: 60px;
+    justify-content: right;
+}
+.arrow_up a img{
+    position:absolute;
+    width: 30px;
+    height: 30px;
+    right: 0;
+    cursor: pointer;
+    margin-top: 10vh;
+    margin-right: 0;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+}
+
+/* end footer section styles */
+
+/* media Query section*/
+@media (max-width:720px) {
+    .links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #222;
+        width: 200px;
+        padding: 10px;
+    }
+    .links li{
+        margin-bottom: 20px;
+    }
+    .links.show {
+        display: flex;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .Profile{
+        display: flex;
+        flex-direction: column;
+    }
+    .Profile_img img{
+        width: 150px;
+        height: 150px;
+        margin: 0;
+    }
+    .icons{
+        margin-top: 5px;
+    }
+    .about,
+    .skills{
+        margin-top: 60vh
+    }
+    .about_details_me{
+        display:flex;
+        flex-direction: column;
+    }
+    .about_details_me .education,
+    .about_details_me .experience{
+        width: 70vw;
+    }
+    .skills_container{
+        display: flex;
+        flex-direction: column;
+    }
+    .skills_container .technicall_skills,
+    .skills_container .soft_skills{
+        width: 90vw;
+    }
+    .Project{
+        margin-top: 10vh;
+    }
+    .projects_container{
+        display: flex;
+        flex-direction: column;
+    }
+    .project{
+        width: 65%;
+        height: 55vh;
+    }
+    .project img{
+        width: 100%;
+        height: 30vh;
+    }
+    .contact{
+        margin-top: 10vh;
+    }
+    .contact_form{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+    .image img{
+        width: 40vw;
+        height: 30vh;
+        margin-bottom: 5vh;
+    }
+    .champ input{
+        width: 90vw;
+    }
+    .champ #text{
+        width: 90vw;
+    }
+    .footer_section{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+    }
+    .portfolio {
+        text-align: left;
+        margin-bottom: 15px;
+        margin-left: 12vh;
+    }
+    .quik_links{
+        margin-left: 12vh;
+    }
+    .contact_me{
+        justify-content: flex-start;
+    }
+    
+    .arrow_up{
+        display: none;
+    }
+}
+/* End media Query section*/
+
